@@ -1,0 +1,126 @@
+
+ide Eclipse 2019 build settings:
+*********************************************************************
+GCC C++ Compiler:
+All options: -std=c++17 -I/home/lin/eclipse-workspace/Isetta-release/src -O0 -g3 -Wall -c
+Dialect: -std=c++17
+Preprocessor: -
+Includes: /home/lin/eclipse-workspace/Isetta-release/src
+Optimization: -
+Debugging: Maximum(-g3)
+Warnings: All warnings(-Wall)
+Miscellaneous: -c
+*********************************************************************
+*********************************************************************
+GCC C Compiler:
+All options: -I/home/lin/eclipse-workspace/Isetta-release/src/imgui/libs/gl3w -O0 -g3 -Wall -c -lglfw3 -Bstatic
+Dialect: -
+Preprocessor: -
+Includes: /home/lin/eclipse-workspace/Isetta-release/src/imgui/libs/gl3w
+Optimization: None(-Oo)
+Debugging: Maximum(-g3)
+Warnings: All warnings(-Wall)
+Miscellaneous: -c -lglfw3 -Bstatic
+*********************************************************************
+*********************************************************************
+GCC C++ Linker:
+All options: -L/home/lin/eclipse-workspace/Isetta-release/src/FMOD/core/lib/x86_64 -pthread
+General: Support for pthread(-pthread)
+Libraries: Horde3D,Horde3DUtils,GL,glfw3,X11,dl,fmod,sodium,mbedtls,mbedx509,mbedcrypto
+Miscellaneous:-
+Shared Library Settings:-
+*********************************************************************
+*********************************************************************
+GCC Assembler:
+All options:
+General: 
+*********************************************************************
+
+*****************FILES-CUSTOM-BUILD-CONFIGURATION********************
+******************************BEGIN**********************************
+FOLDER:Audio
+AudioClip.cpp:          +includes(/home/lin/eclipse-workspace/Isetta-release/src/imgui/libs/gl3w)
+AudioModule.cpp:	    +includes(/home/lin/eclipse-workspace/Isetta-release/src/imgui/libs/gl3w)
+---------------------------------------------------------------------------------------------
+FOLDER: Collisions
+BVTree.cpp				+includes(/home/lin/eclipse-workspace/Isetta-release/src/imgui/libs/gl3w)
+CollisionsModule.cpp 	+includes(/home/lin/eclipse-workspace/Isetta-release/src/imgui/libs/gl3w)
+---------------------------------------------------------------------------------------------
+FOLDER: Components
+FlyController.cpp		+includes(/home/lin/eclipse-workspace/Isetta-release/src/imgui/libs/gl3w)
+---------------------------------------------------------------------------------------------
+FOLDER: Components/Editor
+Console.cpp				+includes(/home/lin/eclipse-workspace/Isetta-release/src/imgui/libs/gl3w)
+						+includes(/home/lin/eclipse-workspace/Isetta-release/src/imgui)
+
+FrameReporter.cpp		+includes(/home/lin/eclipse-workspace/Isetta-release/src/imgui/libs/gl3w)
+NetworkMonitor.cpp		+includes(/home/lin/eclipse-workspace/Isetta-release/src/imgui/libs/gl3w)
+---------------------------------------------------------------------------------------------
+FOLDER: Core/Config
+Config.cpp				+includes(/home/lin/eclipse-workspace/Isetta-release/src/imgui/libs/gl3w)
+---------------------------------------------------------------------------------------------
+FOLDER: Core/Debug
+DebugDraw.cpp			+includes(/home/lin/eclipse-workspace/Isetta-release/src/imgui/libs/gl3w)
+Logger.cpp				+includes(/home/lin/eclipse-workspace/Isetta-release/src/imgui/libs/gl3w)
+---------------------------------------------------------------------------------------------
+FOLDER: Core/Memory
+FreeListAllocator.cpp	+includes(/home/lin/eclipse-workspace/Isetta-release/src/imgui/libs/gl3w)
+MemoryManager.cpp		+includes(/home/lin/eclipse-workspace/Isetta-release/src/imgui/libs/gl3w)
+---------------------------------------------------------------------------------------------
+FOLDER: Core/
+SystemInfo.cpp			+includes(/home/lin/eclipse-workspace/Isetta-release/src/imgui/libs/gl3w)
+---------------------------------------------------------------------------------------------
+FOLDER: Custom/EditorLevel
+EditorLevel.cpp			+includes(/home/lin/eclipse-workspace/Isetta-release/src/imgui/libs/gl3w)
+---------------------------------------------------------------------------------------------
+FOLDER: Custom/EmptyLevel
+EmptyLevel.cpp			+includes(/home/lin/eclipse-workspace/Isetta-release/src/imgui/libs/gl3w)
+---------------------------------------------------------------------------------------------
+FOLDER: Custom/NoCameraLevel
+NoCameraLevel.cpp		+includes(/home/lin/eclipse-workspace/Isetta-release/src/imgui/libs/gl3w)
+---------------------------------------------------------------------------------------------
+FOLDER: Events
+EventObject.cpp			+includes(/home/lin/eclipse-workspace/Isetta-release/src/imgui/libs/gl3w)
+Events.cpp				+includes(/home/lin/eclipse-workspace/Isetta-release/src/imgui/libs/gl3w)
+---------------------------------------------------------------------------------------------
+FOLDER: glad
+glac.c 					+includes(/home/lin/eclipse-workspace/Isetta-release/src/imgui/libs/gl3w)
+						+includes(/home/lin/eclipse-workspace/Isetta-release/src/glad)
+---------------------------------------------------------------------------------------------
+FOLDER: Graphics
+AnimationComponent.cpp	+includes(/home/lin/eclipse-workspace/Isetta-release/src/imgui/libs/gl3w)
+CameraComponent.cpp		+includes(/home/lin/eclipse-workspace/Isetta-release/src/imgui/libs/gl3w)
+Font.cpp				+includes(/home/lin/eclipse-workspace/Isetta-release/src/imgui/libs/gl3w)
+GUI.cpp					+includes(/home/lin/eclipse-workspace/Isetta-release/src/imgui/libs/gl3w)
+GUIModule.cpp			+includes(/home/lin/eclipse-workspace/Isetta-release/src/imgui/libs/gl3w)
+LightComponent.cpp		+includes(/home/lin/eclipse-workspace/Isetta-release/src/imgui/libs/gl3w)
+MeshComponent.cpp		+includes(/home/lin/eclipse-workspace/Isetta-release/src/imgui/libs/gl3w)
+ParticleComponent.cpp	+includes(/home/lin/eclipse-workspace/Isetta-release/src/imgui/libs/gl3w)
+RenderModule.cpp		+includes(/home/lin/eclipse-workspace/Isetta-release/src/imgui/libs/gl3w)
+Texture.cpp				+includes(/home/lin/eclipse-workspace/Isetta-release/src/imgui/libs/gl3w)
+Window.cpp				+includes(/home/lin/eclipse-workspace/Isetta-release/src/imgui/libs/gl3w)
+WindowModule.cpp		+includes(/home/lin/eclipse-workspace/Isetta-release/src/imgui/libs/gl3w)
+---------------------------------------------------------------------------------------------
+FOLDER: imgui
+imgui_impl_opengl3.cpp	first include(/home/lin/eclipse-workspace/Isetta-release/src/imgui/libs/gl3w)
+---------------------------------------------------------------------------------------------
+FOLDER: imgui/libs/gl3w/GL
+gl3w.c 					+includes(/home/lin/eclipse-workspace/Isetta-release/src/imgui/libs/gl3w)
+---------------------------------------------------------------------------------------------
+FOLDER: Networking
+NetworkingModule.cpp	+includes(/home/lin/eclipse-workspace/Isetta-release/src/imgui/libs/gl3w)
+NetworkingManager.cpp	+includes(/home/lin/eclipse-workspace/Isetta-release/src/imgui/libs/gl3w)
+NetworkingTransform.cpp +includes(/home/lin/eclipse-workspace/Isetta-release/src/imgui/libs/gl3w)
+---------------------------------------------------------------------------------------------
+FOLDER: Scene
+Level.cpp				+includes(/home/lin/eclipse-workspace/Isetta-release/src/imgui/libs/gl3w)
+						+includes(/home/lin/eclipse-workspace/Isetta-release/src/yojimbo)
+
+LevelManager.cpp		+includes(/home/lin/eclipse-workspace/Isetta-release/src/imgui/libs/gl3w)
+---------------------------------------------------------------------------------------------
+FOLDER: yojimbo.cpp
+yojimbo.cpp				+includes(/home/lin/eclipse-workspace/Isetta-release/src/yojimbo/netcode.io)
+						+includes(/home/lin/eclipse-workspace/Isetta-release/src/yojimbo/reliable.io)
+---------------------------------------------------------------------------------------------
+EngineLoop.cpp			+includes(/home/lin/eclipse-workspace/Isetta-release/src/imgui/libs/gl3w)
+---------------------------------------------------------------------------------------------
